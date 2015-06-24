@@ -12,9 +12,9 @@
 
 int main(int argc, const char * argv[]) {
 
-    int arr[10] = {1,2,3,5,7,8,9,19};
+    int arr[10] = {1,2,3,5,7,8,9,19,76,34};
     
-    binarySearch(arr, 9, 0, 9);
+    chooseSort(arr, 10);
     
     return 0;
 }
