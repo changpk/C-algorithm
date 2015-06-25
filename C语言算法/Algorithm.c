@@ -89,9 +89,25 @@ void chooseSort (int arr[], int length) {
     showArryElement(arr, length);
 }
 
-// 插入排序：第一个元素为一个有序数列
+// 插入排序：第一个元素为一个有序数列（1.a0为一个有序序列，a[1,...n-1]为无序序列；2.把第i个元素插入a[0,1,...i -1],的到有序序列a[0,1,......i];3.进行循环，直到i = n-1 为止）
 
 void insertSort (int arr[], int length) {
     
+    printf(" 插入排序开始\n");
+    for (int i = 0; i < length; i ++) {
+        
+        // 第二个循环元素的索引和第一个的关系（这个可类似于一个冒泡排序，交换相邻元素。难点是找索引的关系）
+        for (int j = i - 1; j >= 0; j --) {
+            
+            // 相邻排序的元素
+            swap(&arr[j], &arr[j+1]);
+            /*
+             int temp = arr[j+1];
+             arr[j+1] = arr[j];
+             arr[j] = temp;
+             */
+        }
+    }
     
+      showArryElement(arr, length);
 }

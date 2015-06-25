@@ -12,9 +12,9 @@
 
 int main(int argc, const char * argv[]) {
 
-    int arr[10] = {1,2,3,5,7,8,9,19,76,34};
+    int arr[10] = {100,2,49,34,8,65,9,19,76,34};
     
-    chooseSort(arr, 10);
+    insertSort(arr, 10);
     
     return 0;
 }
