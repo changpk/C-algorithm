@@ -14,8 +14,7 @@ int main(int argc, const char * argv[]) {
 
     int arr[10] = {100,2,49,34,8,65,9,19,76,34};
     
-    insertSort(arr, 10);
-    
+    quickSort(arr, 0, 9);
     return 0;
 }
 

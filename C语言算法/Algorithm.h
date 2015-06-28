@@ -24,4 +24,7 @@ void chooseSort (int arr[], int length);
 
 // 插入排序
 void insertSort (int arr[], int length);
+
+// 快速排序
+void quickSort (int arr[], int low, int high);
 #endif /* defined(__C______Algorithm__) */

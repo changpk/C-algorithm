@@ -111,3 +111,65 @@ void insertSort (int arr[], int length) {
     
       showArryElement(arr, length);
 }
+
+// 快速排序采用的是分治的思想，找到一个基准（pivot），保证左边序列的数字必须小于等于pivot，右边序列的数字必须大于pivot。对左右两边的数列进行递归操作
+
+void quickSort (int a[], int left, int right) {
+    
+    printf("快速排序开始\n");
+    
+    // 结束的标志
+    if (left >= right) return;
+    
+    // i 从左边扫描，j从右边扫描
+    int i , j,baseNum;
+    
+    baseNum = a[left];
+    i = left;
+    j = right;
+    
+    
+    // {100,2,49,34,8,65,9,19,76,34}
+    // i 和 j相等的时候，则找到了pivot
+    while (i != j) {
+        
+        // 如果右边的元素大于基数，继续向左扫描
+        while (a[j] >= baseNum && i < j) {
+            printf("1**\n");
+            j --;
+        }
+        
+        // 如果左边的元素小于基数，继续向右扫描
+        while (a[i] <= baseNum && i < j) {
+            printf("2**\n");
+
+            i ++;
+        }
+        
+        int temp;
+        // 需要交换a[i]和a[j]
+        if (i < j) {
+            
+            printf("3??\n");
+
+            temp = a[j];
+            a[j] = a[i];
+            a[i] = temp;
+        }
+    }
+    
+    // 把基数放到合适的位置
+    a[left] = a[i];
+    a[i] = baseNum;
+    
+    // 递归处理右边序列
+    quickSort(a, i + 1, right);
+    
+    // 递归处理左边序列
+    quickSort(a, left, i - 1);
+    
+    showArryElement(a, right + 1);
+    
+}
+
+
