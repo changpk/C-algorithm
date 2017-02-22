@@ -8,13 +8,17 @@
 
 #include <stdio.h>
 #include "Algorithm.h"
+#include "LinkList.h"
 
 
 int main(int argc, const char * argv[]) {
 
-    int arr[10] = {100,2,49,34,8,65,9,19,76,34};
+    LinkList l = initLinkList();
+    for (int i = 0; i < 4; i ++) {
+        tailAssignLinkList(l, i );
+    }
+    listLinkList(l);
     
-    quickSort(arr, 0, 9);
     return 0;
 }
 

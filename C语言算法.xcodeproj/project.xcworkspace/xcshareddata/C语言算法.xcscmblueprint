@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "02E3DDFFE55CB63ED0D43A51A13B4BD5C2997404",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "02E3DDFFE55CB63ED0D43A51A13B4BD5C2997404" : 9223372036854775807,
+    "AB3E7AFD15E1A92BFD67B41AA1887DD786465C91" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "3B82832E-F4E0-4288-943D-26E3DE538478",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "02E3DDFFE55CB63ED0D43A51A13B4BD5C2997404" : "C-algorithm\/",
+    "AB3E7AFD15E1A92BFD67B41AA1887DD786465C91" : ""
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "C语言算法",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "C语言算法.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:changpk\/C-algorithm.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "02E3DDFFE55CB63ED0D43A51A13B4BD5C2997404"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:changpk\/MonitTouchEvent.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "AB3E7AFD15E1A92BFD67B41AA1887DD786465C91"
+    }
+  ]
+}

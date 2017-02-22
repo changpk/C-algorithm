@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1A28D76F1E5BC057007EE01C /* SeqList.c in Sources */ = {isa = PBXBuildFile; fileRef = 1A28D76D1E5BC057007EE01C /* SeqList.c */; };
+		1AD9E2CA1E5D6015001442EE /* LinkList.c in Sources */ = {isa = PBXBuildFile; fileRef = 1AD9E2C81E5D6015001442EE /* LinkList.c */; };
 		30EB36B71B3A508E00E837F0 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 30EB36B61B3A508E00E837F0 /* main.c */; };
 		30EB36BF1B3A531300E837F0 /* Algorithm.c in Sources */ = {isa = PBXBuildFile; fileRef = 30EB36BD1B3A531300E837F0 /* Algorithm.c */; };
 /* End PBXBuildFile section */
@@ -24,6 +26,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1A28D76D1E5BC057007EE01C /* SeqList.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = SeqList.c; sourceTree = "<group>"; };
+		1A28D76E1E5BC057007EE01C /* SeqList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SeqList.h; sourceTree = "<group>"; };
+		1AD9E2C81E5D6015001442EE /* LinkList.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = LinkList.c; sourceTree = "<group>"; };
+		1AD9E2C91E5D6015001442EE /* LinkList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LinkList.h; sourceTree = "<group>"; };
 		30EB36B31B3A508E00E837F0 /* C语言算法 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "C语言算法"; sourceTree = BUILT_PRODUCTS_DIR; };
 		30EB36B61B3A508E00E837F0 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		30EB36BD1B3A531300E837F0 /* Algorithm.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Algorithm.c; sourceTree = "<group>"; };
@@ -63,6 +69,10 @@
 				30EB36B61B3A508E00E837F0 /* main.c */,
 				30EB36BE1B3A531300E837F0 /* Algorithm.h */,
 				30EB36BD1B3A531300E837F0 /* Algorithm.c */,
+				1A28D76E1E5BC057007EE01C /* SeqList.h */,
+				1A28D76D1E5BC057007EE01C /* SeqList.c */,
+				1AD9E2C91E5D6015001442EE /* LinkList.h */,
+				1AD9E2C81E5D6015001442EE /* LinkList.c */,
 			);
 			path = "C语言算法";
 			sourceTree = "<group>";
@@ -124,7 +134,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				30EB36B71B3A508E00E837F0 /* main.c in Sources */,
+				1AD9E2CA1E5D6015001442EE /* LinkList.c in Sources */,
 				30EB36BF1B3A531300E837F0 /* Algorithm.c in Sources */,
+				1A28D76F1E5BC057007EE01C /* SeqList.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -241,6 +253,7 @@
 				30EB36BC1B3A508E00E837F0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
