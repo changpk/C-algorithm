@@ -26,17 +26,22 @@ bool initLinelist(SeqList * SeqList);
 
 // 动态分配内存
 void initLineListWithMalloc(SeqList ** SeqList);
+
 // 释放内存
 void deallocLinelist(SeqList ** SeqList);
 
 // 查询操作
 ElementType getElement(SeqList SeqList, int index);
+
 // 插入操作 （index >= 1）
 bool insertElement(SeqList *SeqList, int index, ElementType element);
+
 // 删除操作
 bool deleteElement(SeqList *SeqList, int index);
+
 // 更新操作
 bool updateElement(SeqList *SeqList, int index, ElementType element);
+
 // 打印所有元素
 void listAllElement(SeqList SeqList);
 #endif /* SeqList_h */

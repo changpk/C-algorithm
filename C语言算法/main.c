@@ -7,18 +7,23 @@
 //
 
 #include <stdio.h>
+#include <stdlib.h>
 #include "Algorithm.h"
 #include "LinkList.h"
 
 
+
 int main(int argc, const char * argv[]) {
 
-    LinkList l = initLinkList();
-    for (int i = 0; i < 4; i ++) {
-        tailAssignLinkList(l, i );
-    }
-    listLinkList(l);
+    LinkList *list = initLinkList();
+    insertLinkList(list, 3, 100);
+    indexInLinkList(list, 100);
+    deleteIndexInLinkList(list, 3);
+    emptyLinkList(&list);
+    displayLinkList(list);
     
+
+
     return 0;
 }
 
