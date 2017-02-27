@@ -26,6 +26,7 @@ void initLineListWithMalloc(SeqList ** seqList) {
 
 void deallocLinelist(SeqList ** seqList) {
     free(*seqList);
+    *seqList = NULL;
 }
 
 ElementType getElement(SeqList seqList, int index) {

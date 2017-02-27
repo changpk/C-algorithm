@@ -25,7 +25,7 @@ LinkList * initLinkList() {
     printf("请输入链表元素（整数），空格分开,并以回车结尾\n");
     ElementType val;
     
-    // 尾插法插入元素
+    // 尾插法插入元素(从键盘缓冲区里面依次读取数值，忽略空格和换行)
     while (scanf("%d",&val) != EOF ) {
         // 新节点分配内存
         pNewNode = (LinkList *)malloc(sizeof(LinkList));
@@ -39,7 +39,7 @@ LinkList * initLinkList() {
         pTail->next = pNewNode;
         // 尾指针移动到最新的节点，准备指向下一个新的节点
         pTail = pNewNode;
-        
+        // getchar 从键盘缓冲区里面获取字符
         if (getchar() == '\n') {
             // 赋值结束
             break;
@@ -212,4 +212,43 @@ void emptyLinkList(LinkList ** listHead) {
     }
    
     printf("清空链表\n");
+}
+
+void reverseLinkList(LinkList * listHead) {
+    
+    /*
+      1.三个变量 preNode pcurNode pNextCode
+      2.移动pcurNode，每次改变pcurNode的next指向preNode
+      3.pcurNode的节点如果为NULL则循环结束
+     */
+    printf("翻转链表\n");
+
+    // 上次节点变量
+    LinkList *preNode = listHead->next;
+    if ( NULL == preNode) {
+        printf("空链表，不需要翻转\n");
+        return;
+    }
+    // 当前节点变量
+    LinkList *pcurNode = preNode->next;
+    
+    // 第一个节点变为尾指针
+    preNode->next = NULL;
+    
+    // 当前节点为空，则反转到了尾指针已经结束
+    while (NULL != pcurNode) {
+        // 下个节点变量
+        LinkList *pnextNode = pcurNode->next;
+        // 当前节点指向上次节点，进行反转
+        pcurNode->next = preNode;
+        // 移动上次节点
+        preNode = pcurNode;
+        // 移动当前节点
+        pcurNode = pnextNode;
+    }
+
+    // 循环结束preNode则是尾指针
+    listHead->next = preNode;
+    
+    displayLinkList(listHead);
 }

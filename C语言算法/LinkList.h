@@ -45,5 +45,8 @@ int lengthOfLinklist(LinkList * listHead);
 // 清空链表
 void emptyLinkList(LinkList ** listHead);
 
+// 反转链表
+void reverseLinkList(LinkList * listHead);
+
 
 #endif /* LinkList_h */

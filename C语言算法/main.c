@@ -15,15 +15,6 @@
 
 int main(int argc, const char * argv[]) {
 
-    LinkList *list = initLinkList();
-    insertLinkList(list, 3, 100);
-    indexInLinkList(list, 100);
-    deleteIndexInLinkList(list, 3);
-    emptyLinkList(&list);
-    displayLinkList(list);
-    
-
-
     return 0;
 }
 
